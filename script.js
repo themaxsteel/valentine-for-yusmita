@@ -1,11 +1,11 @@
 const alternatives = [
   {text:"", images:"images/cat-01.gif"},
-  {text:"Te prometo que será inolvidable", images:"images/cat-02.gif"},
-  {text:"Piénsalo de nuevo", images:"images/cat-03.gif"},
-  {text:"Vamos, atrévete a un sí", images:"images/cat-04.gif"},
-  {text:"Que el miedo no te detenga", images:"images/cat-05.gif"},
+  {text:"Ih serius nanti aku cari kamu ke Jakarta T_T", images:"images/cat-02.gif"},
+  {text:"Coba pikir-pikir lagi 🥺", images:"images/cat-03.gif"},
+  {text:"Ayo dong mauuu pliss ☹️", images:"images/cat-04.gif"},
+  {text:"Kok Yusmita jahatt nolak gitu", images:"images/cat-05.gif"},
 ]
-const ohyes = {text:"Sabía que aceptarias", images:"images/cat-yes.gif"}
+const ohyes = {text:"Hehehe tunggu ya di Jakarta nanti 😋<br> Happy Valentine Day Sayanggg!", images:"images/cat-yes.gif"}
 const cat = document.querySelector('.cat')
 const text = document.querySelector('.text')
 const buttons = document.querySelectorAll('.button')
@@ -27,11 +27,11 @@ errorButton.addEventListener('click', ()=>{
 
 buttons.forEach(button => {
   button.addEventListener('click', ()=>{
-      if(button.textContent == "Si"){
+      if(button.textContent == "YESS!!!"){
           updateDisplay(ohyes)
           buttons.forEach(btn => btn.style.display = 'none')
       }
-      if(button.textContent == 'No'){
+      if(button.textContent == 'GAK!'){
           count++
           if(count < alternatives.length){
               updateDisplay(alternatives[count])
